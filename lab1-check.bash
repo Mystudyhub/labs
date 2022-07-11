@@ -2,17 +2,13 @@
 
 # ./lab1-check.bash
 
-# Author:  Murray Saul
-# Date:    May 22, 2016
-# Edited by: Peter Callaghan
-# Date: Sept 26, 2021
-#
-# Purpose: Check that students correctly installed the centos1 VM
-#          and properly performed common Linux commands. Script will
-#          exit if errors, but provide feedback to correct the problem.
+# Author:    Vishal Bhagat
+# Date:      July 7,2022
 
-# Function to indicate OK (in green) if check is true; otherwise, indicate
-# WARNING (in red) if check is false and end with false exit status
+#
+# Purpose: Create System info report
+# USAGE: ./myreport.py
+echo "System Report"
 
 logfile=$(getent passwd ${SUDO_USER:-$USER} | cut -d: -f6)/Desktop/lab1_output.txt
 
